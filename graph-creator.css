@@ -1,0 +1,183 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+}
+
+p{ 
+     text-align: center; 
+     overflow: overlay;
+     position: relative;
+}
+
+body{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: rgb(248, 248, 248)
+}
+
+#toolbox{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+    border: 2px solid #EEEEEE;
+    border-radius: 5px;
+    padding: 1em;
+    z-index: 5;
+}
+
+
+#toolbox2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+    border: 2px solid #EEEEEE;
+    border-radius: 5px;
+    padding: 1em;
+    z-index: 5;
+}
+
+div#nodeInfo {
+    position: absolute;
+    right: 4px;
+    cursor: text;
+    width: 300px;
+    z-index: 10000;
+    border: 2px solid #EEEEEE;
+    border-radius: 8px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    padding: 4px;
+    text-align: right;
+}
+
+div#nodeInfo div#cover {
+    text-align: left;
+    height: 300px;
+}
+
+div#nodeInfo div.t {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+div#nodeInfo img.cover {
+    margin-bottom: 6px;
+    position: absolute;
+    right: 3px;
+}
+
+div#nodeInfo img.action {
+    cursor: pointer;
+    position: absolute;
+}
+
+div#movieInfo div.f {
+    border-top: 1px dotted #8E5981;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+div#movieInfo span.d {
+    font-weight: bold;
+}
+
+div#movieInfo span.c {
+    font-style: italic;
+}
+
+div#movieInfo span.l {
+    font-size: 11px;
+    color: #24553E;
+    font-variant: small-caps;
+}
+
+#toolbox input{
+    width: 30px;
+    opacity: 0.4;
+}
+#toolbox input:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+#hidden-file-upload{
+    display: none;
+}
+
+#download-input{
+    margin: 0 0.5em;
+}
+
+.conceptG text{
+    pointer-events: none;
+}
+
+marker{
+    fill: #333;
+}
+
+g.conceptG circle{
+    fill: #F6FBFF;
+    stroke: #333;
+    stroke-width: 2px;
+}
+
+g.conceptG:hover circle{
+    fill: rgb(200, 238, 241);
+}
+
+g.selected circle{
+    fill: rgb(250, 232, 255);
+}
+g.selected:hover circle{
+    fill: rgb(250, 232, 255);
+}
+
+path.link {
+    fill: none;
+    stroke: #333;
+    stroke-width: 6px;
+    cursor: default;
+}
+
+path.link:hover{
+    stroke: rgb(94, 196, 204);
+}
+
+g.connect-node circle{
+    fill: #BEFFFF;
+}
+
+.popup {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    width: 200px;
+    border: 1px #ccc solid;
+    border-radius: 6px;
+    box-shadow: #333 2px 2px 4px;
+    padding: 8px;
+    font-family: arial, helvetica, sans-serif;
+}
+
+.popup h2 {
+    margin: 0 0 1rem 0;
+}
+
+path.link.hidden{
+    stroke-width: 0;
+}
+
+path.link.selected {
+    stroke: rgb(229, 172, 247);
+}
